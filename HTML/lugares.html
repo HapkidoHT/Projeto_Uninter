@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>transformandovidas.com.br/Produtos</title>
+
+  <header>
+    <div class="container">
+      <h1>Transformando Vidas</h1>
+      <nav>
+        <ul>
+          <li><a href="/HTML/index.html">Início</a></li>
+          <li><a href="/HTML/sobre.html">Sobre</a></li>
+          <li><a href="/HTML/lugares.html">Lugares</a></li>
+          <li><a href="/HTML/contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="/CSS/style_lugares.css">
+
+  <script>
+
+    var slideIndex = 1;
+
+    function changeSlide(n) {
+      showSlide((slideIndex += n));
+    }
+
+    function showSlide(n) {
+      var slides = document
+        .getElementsByClassName("carousel-inner")[0]
+        .getElementsByTagName("img");
+
+      if (n > slides.length) {
+        slideIndex = 1;
+      } else if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+    }
+  </script>
+
+</head>
+
+<body>
+  <link rel="stylesheet" href="/CSS/style_lugares.css">
+  <div id="carousel">
+    <div class="carousel-inner">
+      <img src="/Imagens/parque-tropeiros-curitiba.png" alt="Imagem 1">
+      <img src="/Imagens/sao nicolau.jpg" alt="Imagem 2">
+      <img src="/Imagens/Bosque Trabalhador.jpg" alt="Imagem 3">
+      <img src="/Imagens/Diadema.jpg" alt="Imagem 4">
+      <img src="/Imagens/Passauna.jpg" alt="Imagem 5">
+      <img src="/Imagens/Bosque do Fazendinha.jpg" alt="Imagem 6">
+      <img src="/Imagens/Cambuí.jpg" alt="Imagem 7">
+      <img src="/Imagens/Parque barigui.jpg" alt="Imagem 8">
+    </div>
+    <a class="carousel-control prev" href="#" onclick="changeSlide(-1)">&lt;</a>
+    <a class="carousel-control next" href="#" onclick="changeSlide(1)">&gt;</a>
+  </div>
+  <div class="grid">
+    <div class="column">
+      <img src="/Imagens/parque-tropeiros-curitiba.png" alt="Img1">
+      <h3>Parque dos Tropeiros</h3>
+      <a href="https://www.curitiba.pr.gov.br/conteudo/parque-municipal-dos-tropeiros-universidade-livre-do-professor/312" target="_blank" class="btn">Saiba Mais</a>
+    </div>
+
+    <div class="column">
+      <img src="/Imagens/sao nicolau.jpg" alt="Img2">
+      <h3>Bosque São Nicolau</h3>
+      <a href="https://www.curitiba.pr.gov.br/conteudo/bosque-municipal-sao-nicolau/282" target="_blank" class="btn">Saiba Mais</a>
+    </div>
+
+    <div class="column">
+      <img src="/Imagens/Bosque Trabalhador.jpg" alt="Img3">
+      <h3>Bosque do Trabalhador</h3>
+      <a href="https://www.curitiba.pr.gov.br/conteudo/bosque-municipal-do-trabalhador-parque-do-trabalhador/283" target="_blank" class="btn">Saiba Mais</a>
+    </div>
+
+    <div class="column">
+      <img src="/Imagens/Diadema.jpg" alt="Img4">
+      <h3>Parque Municipal Diadema</h3>
+      <a href="https://www.curitiba.pr.gov.br/conteudo/parque-municipal-diadema/311" target="_blank" class="btn">Saiba Mais</a>
+    </div>
+
+    <div class="column">
+      <img src="/Imagens/Passauna.jpg" alt="Img5">
+      <h3>Parque Passaúna</h3>
+      <a href="https://www.curitiba.pr.gov.br/conteudo/parque-municipal-passauna/315" target="_blank" class="btn">Saiba Mais</a>
+    </div>
+
+    <div class="column">
+      <img src="/Imagens/Bosque do Fazendinha.jpg" alt="Img6">
+      <h3>Bosque Municipal Fazendinha</h3>
+      <a href="https://www.curitiba.pr.gov.br/conteudo/bosque-municipal-fazendinha/272" target="_blank" class="btn">Saiba Mais</a>
+    </div>
+
+    <div class="column">
+      <img src="/Imagens/Cambuí.jpg" alt="Img7">
+      <h3>Parque Cambuí</h3>
+      <a href="https://turismo.curitiba.pr.gov.br/conteudo/parque-cambui/1610" target="_blank" class="btn">Saiba Mais</a>
+    </div>
+
+    <div class="column">
+      <img src="/Imagens/Parque barigui.jpg" alt="Img8">
+      <h3>Parque Barigui</h3>
+      <a href="https://www.curitiba.pr.gov.br/conteudo/parque-barigui-de-curitiba/292" target="_blank" class="btn">Saiba Mais</a>
+    </div>
+
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>Douglas Godoi &copy; 2023 Transformando Vidas. Todos os direitos reservados. </p>
+    </div>
+  </footer>
+</body>
+
+</html>
