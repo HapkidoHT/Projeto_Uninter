@@ -13,16 +13,29 @@
   <header>
     <div class="container">
       <h1>Transformando Vidas</h1>
+      <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
       <nav>
         <ul>
-          <li><a href="">Início</a></li>
-          <li><a href="/HTML/sobre.html">Sobre</a></li>
-          <li><a href="/HTML/lugares.html">Lugares</a></li>
-          <li><a href="/HTML/contato.html">Contato</a></li>
+          <li><a href="/index.html">Início</a></li>
+          <li><a href="/sobre.html">Sobre</a></li>
+          <li><a href="/lugares.html">Lugares</a></li>
+          <li><a href="/contato.html">Contato</a></li>
         </ul>
       </nav>
     </div>
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="/index.html">Início</a></li>
+        <li><a href="/sobre.html">Sobre</a></li>
+        <li><a href="/lugares.html">Lugares</a></li>
+        <li><a href="/contato.html">Contato</a></li>
+      </ul>
+    </div>
   </header>
+
+
 
   <div class="banner">
     <img src="/Imagens/cic_mapa.png" alt="CIC Png">
@@ -55,6 +68,17 @@
       </div>
     </footer>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Quando o botão de alternância do menu for clicado
+      $(".menu-toggle").click(function () {
+        // Alternar a exibição do menu de hambúrguer
+        $(".mobile-menu").slideToggle();
+      });
+    });
+  </script>
 
   <script>
     function abrirExplicacao() {

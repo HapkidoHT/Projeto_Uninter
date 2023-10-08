@@ -1,3 +1,30 @@
+/* Estilos para telas maiores que 1080px */
+@media screen and (min-width: 1080px) {
+  .mobile-menu {
+    display: none; /* Oculta o menu de hambúrguer por padrão em telas maiores */
+  }
+  nav ul {
+    display: flex; /* Exibe o menu principal como uma lista horizontal em telas maiores */
+  }
+}
+
+/* Estilos para telas menores que 1080px */
+@media screen and (max-width: 1079px) {
+  .mobile-menu {
+    display: block; /* Exibe o menu de hambúrguer em telas menores */
+  }
+  nav ul {
+    display: none; /* Oculta o menu principal em telas menores */
+  }
+}
+
+/* Estilos adicionais para telas maiores que 1080px para ocultar o menu de hambúrguer */
+@media screen and (min-width: 1080px) {
+  .menu-toggle {
+    display: none; /* Oculta o botão do menu de hambúrguer em telas maiores */
+  }
+}
+
 /*HEADER INICIO*/
 body {
   margin: 0;
@@ -19,38 +46,46 @@ header {
   padding: 15px 0;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Coloca os elementos nas extremidades */
   align-items: center;
+  padding: 0 20px;
 }
+
 h1 {
   margin: 0;
   font-size: 24px;
 }
+
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex; /* Para alinhar os itens horizontalmente */
 }
+
 nav ul li {
-  display: inline;
   margin-left: 20px;
 }
+
 nav ul li:first-child {
   margin-left: 0;
 }
+
 nav ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 16px;
 }
+
 nav ul li a:hover {
   text-decoration: underline;
 }
+
 /*HEADER FIM*/
 
 /*BODY INICIO*/
@@ -133,4 +168,20 @@ nav ul li a:hover {
 }
 .social-icon:hover {
   background-color: #005f91;
+}
+
+@media screen and (max-width: 1080px) {
+  p {
+    font-size: 16px; /* Tamanho de fonte menor para telas menores */
+  }
+}
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 16px; /* Tamanho de fonte menor para telas menores */
+  }
+}
+@media screen and (max-width: 480px) {
+  p {
+    font-size: 16px; /* Tamanho de fonte menor para telas menores */
+  }
 }
